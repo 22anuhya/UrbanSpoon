@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{background:-webkit-linear-gradient(rgb(128, 255, 255), rgb(128, 255, 128));}
+.sidebar {height: auto ;width: 100px;position: fixed;z-index: 1;top: 0;left: 20px;background: -webkit-linear-gradient(#fdf97e, #fd8de9); overflow-x: hidden; padding-top: 16px; }
+.sidebar a { padding: 6px 8px 6px 16px; text-decoration: none; font-size: 20px; color: #161515; display: block;}
+.sidebar a:hover { color: #f1f1f1;}
+.slideshow-container{height: 700px; width:1200px;position:relative;margin-left:100px; top:0;}
+.signup {position: absolute;top: 93%;left: 70%;font-size: 30px;color: white;}
+.login{position: absolute;top: 93%;left: 78%;font-size: 30px;color: white;}
+.welcome{position:absolute;font-size: 80px;font-family: "Lato", sans-serif ;top:0px;left:450px; text-align:center;width: auto;height:50px;}
+.add{position: absolute;top: 93%;left: 10%;font-size: 30px;color: white;}
+.text-block {position: absolute;top: 205px;margin-left:500px;height:auto;color:white;font-size:30px;width:500px; text-align:center;}
+ .content {font-size:30px;color:red;}
+ .flip-box {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.flip-box-inner {
+  position: relative; 
+  text-align: center; 
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front { 
+  align-items:center;
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <a href="login.html"><i class="fa fa-fw fa-user"></i> Login</a>
+  <a href="signup.html"><i class="fa fa-fw fa-user-plus"></i> SignUp</a>
+</div>
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="images/food1.jpg" style="height: 700px; width:1200px;position:relative;margin-left:100px; top:0;">
+        <div class="text-block">
+    <p>Hungry?</p>
+  </div>
+    </div>
+    <div class="mySlides">  
+        <img src="images/food2.jpg" style="height: 700px; width:1200px;position:relative;margin-left:100px; top:0;">
+        <div class="text-block">
+    <p>Craving for highest rated food for your SPOONS?!!</p>
+  </div>
+    </div>
+    <div class="mySlides">
+            <img src="images/food5.jpg" style="height: 700px; width:1200px;position:relative;margin-left:100px; top:0;">
+            <div class="text-block">
+    <p>URBAN SPOON IS HERE!!</p>
+  </div>
+    </div>
+    <div class="mySlides">
+            <img src="images/food6.jpg" style="height: 700px; width:1200px;position:relative;margin-left:100px; top:0;">
+            <div class="text-block">
+    <p>Get the best rated restaurants and foods</p>
+  </div>
+    </div>
+    <div class="mySlides">
+            <img src="images/food7.jpg" style="height: 700px; width:1200px;position:relative;margin-left:100px; top:0;">
+            <div class="text-block">
+    <p>Share your experiences!!</p>
+  </div>
+    </div>
+    <div class="mySlides">
+            <img src="images/food8.jpg" style="height: 700px; width:1200px;position:relative;margin-left:100px; top:0;">
+            <div class="text-block">
+    <p>Collect exiting discounts and Goodies by being active :)</p>
+  </div>
+    </div>
+    <div class="welcome"><h4 style="color:white">URBAN SPOON</h4></div>
+</div>
+<!--   <div class="spoon"><img src="images/spoon.png"></div>  -->
+<div class="content">
+<center><p>Find the best Restaurant</p></center>
+</div>
+<div class="flip-box" style="margin-left:200px;margin-top:0;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/res3.jpg" style="width:500px;height:300px;">
+    </div>
+    <div class="flip-box-back" >
+      <a href="price" style="color:pink;"><h2 id="name">Hotel Rasoi</h2></a><br>
+      <h2 id="address">40-1-29, MG Rd, opp. Murali Fortune,MughalrajPuram</h2><br>
+      <h2 id="rate">Price:7000/-</h2>
+    </div>
+  </div>
+  <div class="pictext" style="margin-left:700px;margin-top:50px;"><h1>Share your experiences!!</h1></div>
+</div>
+<div class="flip-box" style="margin-left:900px;margin-top:0;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/res1.jpeg" style="width:500px;height:300px;">
+    </div>
+    <div class="flip-box-back" >
+      <a href="price" style="color:pink;"><h2 id="name">Hotel Best India</h2></a><br>
+      <h2 id="address">Mangalagiri, Andhra Pradesh</h2><br>
+      <h2 id="rate">Price:6000/-</h2>
+    </div>
+  </div>
+  <div class="pictext" style="margin-left:-600px;margin-top:100px;"><h1>Rate Restaurants</h1></div>
+</div>
+<div class="flip-box" style="margin-left:200px;">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <img src="images/res2.jpg" style="width:500px;height:300px;">
+    </div>
+    <div class="flip-box-back" >
+      <a href="price" style="color:pink;"><h2 id="name">Sashi Paradise</h2></a><br>
+      <h2 id="address">MughalrajPuram, Andhra Pradesh</h2><br>
+      <h2 id="rate">Price:5000/-</h2>
+    </div>
+  </div>
+  <div class="pictext" style="margin-left:700px;margin-top:100px;"><h1>Collect Exciting Coupons!</h1></div>
+</div><br><br><br>
+<div class="footer" style="background-color:white;text-align:center;height:100px;">
+  <br>
+  <a href="add.html"><i class="fa fa-fw fa-plus-circle"></i> AddRestaurant</a>
+  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+  <a href="about.html"><i class="fa fa-fw fa-info"></i> About</a>
+  <a href="admin.html"><i class="fa fa-fw fa-key"></i>Admin-Login</a>
+  <h5>all copyrights reserved</h5>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var l=document.getElementsByClassName("login");
+  var s=document.getElementsByClassName("SignUp");
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); 
+}
+</script>
+</body>
+</html> 
